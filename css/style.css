@@ -4,7 +4,7 @@ fonts
 @import url('https://fonts.googleapis.com/css2? family= Montserrat:wght@800 & family= Open+Sans:wght@400;500;800 & family= Poppins:wght@300; 400;500;600;700 & family= Rubik+Dirt & family= Rubik:wght@300;400;500;600;700;800 & family= Ubuntu & display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Lemon&family=Rubik+Spray+Paint&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
 /*----------------
 Variaveis
 ------------------*/
@@ -355,10 +355,18 @@ Home Section
     text-align: center;
 }
 .home-text h1{
-    font-family: var(--cursive-font);
+    font-family: "Cinzel Decorative", serif;
     font-size: 60px;
     line-height: 70px;
+     -webkit-text-stroke: 2px #000000; /* Espessura e cor da borda */
+     text-shadow:
+    2px 1px 0 #FFD700,   /* Segunda borda (amarela, estilo externa) */
+    -1px 1px 0 #FFD700,
+    2px -1px 0 #FFD700,
+    -1px -1px 0 #FFD700;
     margin: 0 0 5px;
+    color: #ffffff;
+    font-weight: bold;
 }
 .home-text p{
     margin: 0 0 30px;
@@ -753,3 +761,5 @@ responsive
         width: 100%;
     }
 }
+
+
