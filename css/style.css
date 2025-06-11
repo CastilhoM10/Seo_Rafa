@@ -316,19 +316,20 @@ header
 Home Section
 ------------------*/
 
-.home-section{
+.home-section {
     position: relative;
     overflow: hidden;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
-.home-section::before{
+.home-section::before {
     content: '';
     position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    background-color: #000;
-    opacity: 0.7;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.7);
     z-index: -1;
 }
 .home-section .home-bg{
@@ -355,21 +356,47 @@ Home Section
     text-align: center;
 }
 .home-text h1{
-    font-family: "Cinzel Decorative", serif;
-    font-size: 60px;
-    line-height: 70px;
-     -webkit-text-stroke: 2px #000000; /* Espessura e cor da borda */
-     text-shadow:
-    2px 1px 0 #FFD700,   /* Segunda borda (amarela, estilo externa) */
-    -1px 1px 0 #FFD700,
-    2px -1px 0 #FFD700,
-    -1px -1px 0 #FFD700;
-    margin: 0 0 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 700;
     color: #ffffff;
-    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+    animation: fadeInUp 1s ease forwards;
+}
+.home-text h1 .highlight{
+    background: linear-gradient(90deg, #ffdb65, #f7aa1c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+    animation: shine 3s infinite linear;
+    
 }
 .home-text p{
     margin: 0 0 30px;
+}
+
+/* Fade-in animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Optional shimmer/shine effect on highlight */
+@keyframes shine {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
 }
 
 /*----------------
@@ -710,6 +737,45 @@ footer section
     border-top: 1px solid var(--white-light);
 }
 
+.btn {
+  outline: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #e2bb3d;
+  min-width: 200px;
+  border: 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .1);
+  box-sizing: border-box;
+  padding: 16px 20px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: .95;
+}
+
+.btn .animation {
+  border-radius: 100%;
+  animation: ripple 0.6s linear infinite;
+}
+
+@keyframes ripple {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1), 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1);
+  }
+
+  100% {
+    box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1), 0 0 0 80px rgba(255, 255, 255, 0);
+  }
+}
 /*----------------
 responsive
 ------------------*/
