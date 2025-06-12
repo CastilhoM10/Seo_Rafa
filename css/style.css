@@ -375,6 +375,8 @@ Home Section
 }
 .home-text p{
     margin: 0 0 30px;
+    font-weight: 200;
+    color: #7a7a7a;
 }
 
 /* Fade-in animation */
@@ -736,7 +738,15 @@ footer section
     font-size: 14px;
     border-top: 1px solid var(--white-light);
 }
-
+.footer-item .port-dev{
+    margin-top: 10px;
+}
+.footer-item .port-dev a{
+    font-family:var(--cursive-font);
+    font-size: 15px;
+    list-style: none;
+    color: #f6f6f6;
+}
 .btn {
   outline: 0;
   display: inline-flex;
@@ -751,7 +761,7 @@ footer section
   padding: 16px 20px;
   color: #fff;
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 1.2px;
   text-transform: uppercase;
   overflow: hidden;

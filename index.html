@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/lightbox.css">
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
 </head>
 <body>
     <!--PageLoader start-->
@@ -22,19 +23,19 @@
         <div class="container">
             <div class="row justify-content-between align-items-center">
                 <div class="logo">
-                    <a href="#"><img src="images/logo.png" alt="Logo Seo Rafa" style="height: 100px;"></a>
+                    <a href="#" onclick="scrollToSection(event, 'home')"><img src="images/logo.png" alt="Logo Seo Rafa" style="height: 100px;"></a>
                 </div>
                 <button type="button" class="nav-toggler">
                     <span></span>
                 </button>
                 <nav class="nav">
                     <ul>
-                        <li class="nav-item"><a href="#home">Home</a></li>
-                        <li class="nav-item"><a href="#about">Sobre</a></li>
-                        <li class="nav-item"><a href="#our-gallery">Galeria</a></li>
-                        <li class="nav-item"><a href="#testimonials">Avaliações</a></li>
-                        <li class="nav-item"><a href="#team">Barbeiros</a></li>
-                        <li class="nav-item"><a href="#footer">Contato</a></li>
+                        <li class="nav-item" ><a href="#home" onclick="scrollToSection(event, 'home')">Home</a></li>
+                        <li class="nav-item"><a href="#about" onclick="scrollToSection(event, 'about')">Sobre</a></li>
+                        <li class="nav-item"><a href="#our-gallery" onclick="scrollToSection(event, 'our-gallery')">Galeria</a></li>
+                        <li class="nav-item"><a href="#testimonials" onclick="scrollToSection(event, 'testimonials')">Avaliações</a></li>
+                        <li class="nav-item"><a href="#team" onclick="scrollToSection(event, 'team')">Barbeiros</a></li>
+                        <li class="nav-item"><a href="#footer" onclick="scrollToSection(event, 'footer')">Contato</a></li>
                     </ul>
                 </nav>
             </div>
@@ -54,7 +55,7 @@
                 <div class="home-text" data-aos="fade-up" data-aos-duration="1000">
                     <h1>Bem Vindo ao <span class="highlight">SeoRafa!</span></h1>
                     <p>Estilo, cuidado e tradição em cada corte. Barba, cabelo e bigode com atendimento de verdade.</p>
-                    <a class="btn" href="#"><i class="animation"></i>BUTTON<i class="animation"></i>
+                    <a class="btn" href="#"><i class="animation"></i>Agende Seu Horario!<i class="animation"></i>
                     </a>
                 </div>
             </div>
@@ -83,7 +84,7 @@
 Hoje, somos referência em cortes clássicos, barbas bem feitas e aquele papo que só uma barbearia de verdade tem. Aqui, cada cliente é parte da nossa história.
 
 </p>
-                            <a href="#" class="equipe">Equipe</a>
+                            <a href="#team" class="equipe" onclick="scrollToSection(event, 'team')">Equipe</a>
                         </div>
                     </section>
                 </div>
@@ -100,7 +101,7 @@ Hoje, somos referência em cortes clássicos, barbas bem feitas e aquele papo qu
         <div class="container">
             <div class="row">
                 <div class="section-title">
-                    <h2 data-title="order now" data-aos="fade-up">Galeria</h2>
+                    <h2 data-title="Gallery" data-aos="fade-up">Galeria</h2>
                 </div>
                 
                     <div class="gallery">
@@ -178,12 +179,12 @@ Hoje, somos referência em cortes clássicos, barbas bem feitas e aquele papo qu
                 <div class="testi-item" data-aos="zoom-in">
                     <div class="testi-author">
                         <div class="testi-author-name">
-                            <h3>Matheus Castilho</h3>
+                            <h3>André Silva</h3>
                             <span>Cliente</span>
                         </div>
                         
                 </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi odit quas quae natus adipisci quidem, unde, delectus suscipit saepe cupiditate sunt numquam quia est fugiat voluptate sequi praesentium. Tempore, modi?</p>
+                <p>Excelente atendimento! Profissionais atenciosos e ambiente super agradável. Recomendo demais!</p>
                 <div class="ratings">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -195,12 +196,12 @@ Hoje, somos referência em cortes clássicos, barbas bem feitas e aquele papo qu
                 <div class="testi-item" data-aos="zoom-in">
                     <div class="testi-author"> 
                         <div class="testi-author-name">
-                            <h3>Gustavo Ruiz</h3>
+                            <h3>Thiago Mendes</h3>
                             <span>Cliente</span>
                         </div>
                         
                 </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi odit quas quae natus adipisci quidem, unde, delectus suscipit saepe cupiditate sunt numquam quia est fugiat voluptate sequi praesentium. Tempore, modi?</p>
+                <p>Melhor barbearia da região! Ambiente limpo, música boa e ainda oferecem café enquanto você espera.</p>
                 <div class="ratings">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -212,12 +213,12 @@ Hoje, somos referência em cortes clássicos, barbas bem feitas e aquele papo qu
                 <div class="testi-item" data-aos="zoom-in">
                     <div class="testi-author">
                         <div class="testi-author-name">
-                            <h3>Maradona</h3>
+                            <h3>Lucas Almeida</h3>
                             <span>Cliente</span>
                         </div>
                         
                 </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi odit quas quae natus adipisci quidem, unde, delectus suscipit saepe cupiditate sunt numquam quia est fugiat voluptate sequi praesentium. Tempore, modi?</p>
+                <p>Sou cliente há anos e nunca me decepciono. Profissionalismo e qualidade em cada atendimento!</p>
                 <div class="ratings">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -294,6 +295,9 @@ Hoje, somos referência em cortes clássicos, barbas bem feitas e aquele papo qu
                 <div class="footer-item" data-aos="fade-up">
                     <h3>Localização</h3>
                     <p>R. São Paulo, 116 - Vila Belvedere, <br> Americana - SP, 13473-150 </p>
+                    <div class="social-links">
+                        <a href="https://maps.app.goo.gl/93eMTaTEA6eHGNwr8" target="_blank"><i class="fa-solid fa-map-location-dot"></i></a>
+                    </div>
                 </div>
                 <div class="footer-item" data-aos="fade-up">
                     <h3>Horarios</h3>
@@ -302,12 +306,13 @@ Hoje, somos referência em cortes clássicos, barbas bem feitas e aquele papo qu
                 </div>
                 <div class="footer-item" data-aos="fade-up">
                     <h3>Contatos</h3>
-                    <p>99353-3123</p>
+                    <p>(19) 99353-3123</p>
                     <div class="social-links">
-                        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/seorafabarbearia?igsh=MXA3NTY5aXdzenh0cA==" target="_blank"><i class="fab fa-instagram"></i></a>
+                        </div>
+                        <div class="port-dev">
+                            <a  href="https://castilhosolutions.com/" target="_blank">CastilhoSolutions</a>
+                        </div>
                     </div>
                 </div>
             </div>
