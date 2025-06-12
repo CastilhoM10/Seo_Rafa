@@ -820,7 +820,14 @@ responsive
     .about-content .equipe{
         font-size: 16px;
     }
-    
+    .footer{
+        background-image: url('../images/Fundo1.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+    }
     .footer-item{
         width: 100%;
     }
