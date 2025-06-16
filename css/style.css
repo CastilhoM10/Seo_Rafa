@@ -683,7 +683,7 @@ footer section
 
 .footer{
     padding: 80px 0 0;
-    background-image: url('../images/Fundo1.jpg');
+    background-image: url('../images/Fundo2.jpg');
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -822,7 +822,6 @@ responsive
     .about-content .equipe{
         font-size: 16px;
     }
-    
     .footer-item{
         width: 100%;
     }
