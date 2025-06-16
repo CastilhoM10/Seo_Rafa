@@ -685,7 +685,7 @@ footer section
     padding: 80px 0 0;
     background-image: url('../images/Fundo1.jpg');
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-position: center;
     position: relative;
     z-index: 1;
@@ -821,6 +821,9 @@ responsive
     }
     .about-content .equipe{
         font-size: 16px;
+    }
+    .footer {
+        background-attachment: scroll; /* Força scroll no mobile */
     }
     .footer-item{
         width: 100%;
