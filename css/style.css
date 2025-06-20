@@ -831,6 +831,9 @@ responsive
     .footer-item:not(:last-child){
         margin-bottom: 30px;
     }
+    .footer-item p{
+        list-style: none;
+    }
     .testi-item{
         width: calc(100% - 30px);
     }
